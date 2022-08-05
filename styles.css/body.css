@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'flames';
+    src: url('../flame-burger-king-font/Flame-Regular.woff') format('woff2')
+}
+
+@font-face{
+    font-family: "flames2";
+    src: url("../flame-burger-king-font/FlameSans-Regular.woff")
+}
+
+@font-face{
+    font-family: "flamesBold";
+    src: url("../flame-burger-king-font/Flame-Bold.woff")
+}
+
+html{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(245,235,220);
+    margin: 0;
+    font-family: flames;
+    color:rgb(80, 35, 20);;
+}
+
+main{
+    padding-top:80px
+}
+
+.space{
+    height:80px;
+}
+
+.content{
+    display: grid;
+    justify-content:space-evenly;
+    grid-template-columns:560px 560px;
+    padding:16px 0px;
+    margin:0px 85px;
+    padding-bottom: 12em;
+}
+
+.content1{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:433px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px rgb(0,0,0,0.3);
+}
+
+.contentPicture{
+    width:100%;
+    height:280px;
+}
+
+.imageLink{
+    text-decoration: none;
+}
+
+.content img{
+    width:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+.contentDescription{
+    width:520px;
+    height:120px;
+    padding: 16px 20px;
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contentDescriptionTitle h4{
+    font-weight: 400;
+    font-size: 18px;
+    font-family: flames;
+    margin:0px 0px 8px 0px;
+}
+
+.contentDescriptionTitle p{
+    font-weight:400;
+    font-family: flames2;
+    width:335px;
+    font-size: 13px;
+}
+
+.terms{
+    color:inherit;
+    text-decoration: underline;
+}
+
+.terms:hover{
+    color:rgb(214, 35, 0);
+}
+
+.contentDescriptionButton{
+    display: flex;
+    align-items: flex-end;
+}
+
+.contentDescriptionButton button{
+    padding:12px 20px;
+    background-color: white;
+    height:48px;
+    border: 1px solid rgb(214, 35, 0);
+    border-radius: 24px;
+    margin-left: 10px;
+}
+
+.contentDescriptionButton button:hover{
+    background-color: rgba(214, 35, 0, 0.1);
+}
+
+.signUpButton{
+    font-family: flames;
+    color:rgb(214, 35, 0);
+    font-size:18px;
+    text-decoration: none;
+}
+
+@media screen and (max-width:900px){
+    .rightSection{
+        display: none;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        flex:1;
+    }
+}
+
+/*Product page Ends*/
+
+.phoneAppPage{
+    background-color: rgb(239, 225, 204);
+    height:489px;
+    display: flex;
+    flex:1,465px;
+    flex-direction: row;
+    flex-grow:1;
+    flex-shrink:1;
+}
+
+.phoneAppContainer{
+    display: flex;
+    justify-content: flex-end;
+    position:relative;
+    width:100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.phoneApp{
+    height:635px;
+    width:480px;
+    position: absolute;
+    top:-130px;
+    right:0;
+}
+
+.phoneApp img{
+    width:100%;
+}
+
+.phoneAppDescription{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: column;
+    flex-basis: 1;
+    padding:10px 30px;
+}
+
+.phoneAppDescription h3{
+    font-size: 55px;
+    font-family:flamesBold;
+    font-weight:600;
+    color:rgb(80, 35, 20);
+    margin-bottom: 35px;
+    margin-top: 22px;
+}
+
+.downloadImages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom:15px
+}
+
+.appleImage{
+    width:145px;
+    display:inline-block;
+    margin-right: 30px;
+}
+
+.appleImage img{
+    width:100%;
+}
+
+.androidImage{
+    width:145px;
+    display:inline-block
+}
+
+.androidImage img{
+    width:100%
+}
+
+.subContent{
+    display: block;
+    font-weight: 600;
+    font-size:13px;
+    font-family:sans-serif;
+    width:400px
+}

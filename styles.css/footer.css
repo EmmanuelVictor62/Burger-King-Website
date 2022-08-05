@@ -1,0 +1,158 @@
+footer{
+    background-color: rgb(43, 2, 0);
+    height:80vh;
+    color:rgb(245, 235, 220); 
+}
+
+
+
+.div{
+    background-color: rgb(43, 2, 0);
+    display: flex;
+    flex-direction: row;
+    --row-count:4;
+    justify-content: space-evenly;
+    padding:90px 120px;
+}
+
+.div1{
+    display:flex;
+    flex-direction: column;
+}
+
+div h3{
+    font-size: 27px;
+    margin-bottom:10px
+}
+
+div a{
+    color:rgb(187, 163, 145);
+    text-decoration: none;
+    font-weight: 400;
+    font-family: flames2;
+    margin-bottom: 7px;
+}
+
+div a:hover{
+   text-decoration: underline;
+   text-decoration-color:rgb(187, 163, 145) ;
+}
+
+.footer2{
+    display:grid;
+}
+
+.footer2{
+    display: flex;
+    justify-content:space-between;
+    background-color: inherit;
+    padding:50px 120px;
+    padding-bottom: 80px;
+}
+
+.leftSection{
+    margin-left:60px;
+}
+
+.companyName{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.footerTerms{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin-bottom: 20px;;
+}
+
+.footerTerms a{
+    border-right:1px rgb(187, 163, 145) solid;
+    padding-right: 10px;
+    font-family: flames2;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.bk{
+    padding-left:10px
+}
+
+.copyright{
+    font-weight:400;
+    font-family: flames2;
+}
+
+.fa-brands{
+    font-size:28px;
+    margin:0px 5px;
+}
+
+.fa-brands{
+    position:relative;
+    cursor:pointer;
+}
+
+.fa-brands .tooltip-text{
+    position:absolute;
+    background-color: white;
+    font-family: flames2;
+    font-weight:400;
+    font-size: 14px;
+    color:black;
+    width:fit-content;
+    white-space:nowrap;
+    border:1px solid white;
+    border-radius:3px;
+    padding:3px 7px;
+    top:40px;
+    left:10px;
+    opacity: 0;
+    transition:0.5s;
+    z-index:20;
+    pointer-events: none;
+}
+
+.fa-brands:hover .tooltip-text{
+    opacity:1;
+}
+
+.footerRightSection{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.footerRightSection a{
+    text-decoration: none;
+    color:white;
+}
+
+@media screen and (max-width:900px){
+    .body{
+        padding:0;
+        margin:0;
+    }
+    .rightSection{
+        display: none;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        flex:1;
+    }
+    .content1{
+        width:80%;
+        height:fit-content
+    }
+
+    .contentPicture{
+        width:100%
+    }
+    .contentDescription{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        height:fit-content;
+    }
+    
+}

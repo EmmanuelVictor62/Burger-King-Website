@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'flames';
+    src: url('../flame-burger-king-font/Flame-Regular.woff') format('woff2')
+}
+
+@font-face{
+    font-family: "flames2";
+    src: url("../flame-burger-king-font/FlameSans-Regular.woff")
+}
+
+header{
+    height:78px;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(245,235,220);
+    text-decoration: none;
+    color:rgb(80, 35, 20);
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 0px;
+    font-family: flames,fallback Helvetica;
+    z-index:1;
+    position: fixed;
+}
+
+
+/* @font-face {
+    font-family: "flames";
+    src: url("C:/Users/Desktop/clone-projects/Burger-king/flame-burger-king-font");
+} */
+
+
+header div{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 20px;
+    flex-shrink: 1;
+    flex-grow:1;
+}
+
+.leftSection{
+    padding:5px;
+    padding-left: 0px;
+}
+
+.leftSection div{
+    margin-left: 20px;
+}
+
+.fa-bars{
+    font-size: 19px;
+    margin-left: 20px;
+}
+
+.menu{
+    text-decoration: none;
+    color:rgb(80, 35, 20);
+    font-size: 18px;;
+    font-family: flames;
+    font-weight: 400;
+}
+
+.menu:hover{
+    color:rgb(214, 35, 0);
+}
+
+.fa-caret-down{
+    font-size:15px;
+    margin-left: 7px;
+}
+
+.fa-caret-down:hover{
+    color:rgb(214, 35, 0);
+}
+
+
+.middleSection{
+    height:88px;
+    width:83px;
+    margin-left: 80px;
+}
+
+.middleSection img{
+    width: 100%;
+}
+
+.rightSection{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 40px;
+}
+
+.fa-location-dot{
+    font-size:16px;
+}
+
+.availability{
+    font-weight: 400;
+    padding-left:10px;
+    font-size: 18px;
+}
+
+.selectLocation{
+    font-family: flames2;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+    color:rgb(214, 35, 0);
+}
+
+.signUpHeaderButton{
+    color:white;
+    margin-left: 20px;
+    padding:6px 24px;
+    font-size: 15px;
+    font-family: flame;
+    font-weight:600;
+    background-color:rgb(214, 35, 0);
+    border:none;
+    border-radius:28px;
+    transition:0.125s;
+}
+
+.signUpHeaderButton:hover{
+    background-color:rgb(167, 27, 0)
+}
+
+.priceHeaderButton{
+    color:white;
+    margin-left: 20px;
+    padding:6px 24px;
+    font-size: 15px;
+    font-family: flame;
+    font-weight:600;
+    background-color:rgb(80, 35, 20);
+    border:none;
+    border-radius:28px;
+}
+
+.fa-bag-shopping{
+    font-size:15px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+@media screen and (max-width:900px){
+    .leftSection{
+        display: none;
+    }
+}
