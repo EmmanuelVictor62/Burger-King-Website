@@ -6,7 +6,7 @@ footer{
 
 
 
-.div{
+.footerDiv{
     background-color: rgb(43, 2, 0);
     display: flex;
     flex-direction: row;
@@ -50,7 +50,7 @@ div a:hover{
     padding-bottom: 80px;
 }
 
-.leftSection{
+.footerLeftSection{
     margin-left:60px;
 }
 
@@ -127,32 +127,180 @@ div a:hover{
     color:white;
 }
 
-@media screen and (max-width:900px){
+
+
+@media screen and (min-width:850px){
     .body{
         padding:0;
         margin:0;
+        overflow-x: hidden;
     }
-    .rightSection{
+    header{
+        justify-content: space-evenly;
+        width:100%;
+        height: 100px;;
+        align-items: center;
+    }
+    
+    .leftSection a{
+        inherits: none;
         display: none;
     }
+
+    .fa-bars{
+        display: block;
+        font-size: 45px;
+    }
+
+    .middleSection{
+        margin-left: 0;
+    }
+
+    .middleSection img{
+        width:130px;
+        height:130px;
+    }
+
+    .fa-caret-down{
+        display: none;
+    }
+
+    .signUpHeaderButton{
+        display:block;
+        font-size: 35px;
+        padding: 12px 40px;
+    }
+
+    .rightSection div, .fa-location-dot, .selectLocation, .priceHeaderButton{
+        display: none;
+    }
+
     .content{
         display: flex;
         flex-direction: column;
         flex:1;
+        overflow-x: hidden;
+        margin:0;
+        align-items: center;
     }
     .content1{
-        width:80%;
-        height:fit-content
+        width: 90vw;
+        height:fit-content;
+        margin-bottom: 35px;
+    }
+
+    .content img{
+        width:100%;
+        height:100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; 
     }
 
     .contentPicture{
-        width:100%
+        width:100%;
+        height:400px;
     }
     .contentDescription{
-        width:100%;
+        width:95%;
         display: flex;
         flex-direction: column;
-        height:fit-content;
+        height:max-content;
     }
-    
+    .contentDescriptionTitle h4{
+        margin-left: 10px;
+    }
+    .contentDescriptionTitle p{
+        width:100%;
+        font-size:14px;
+        margin-left: 10px;
+    }
+    .contentDescriptionButton button{
+        height: max-content;
+        padding: 15px 23px;
+        border-radius: 33px;
+        margin: 10px 0px 10px 10px;
+    }
+    .signUpButton{
+        font-size: 33px;
+    }
+
+    .terms{
+        font-size: inherit;
+    }
+    .phoneAppPage{
+        display: flex;
+        flex-direction: column-reverse;
+        width:100%;
+        height: fit-content;
+    }
+    .phoneAppContainer{
+        display: flex;
+        justify-content:space-around;
+    }
+    .phoneApp{
+        position: static;
+        height:750px;
+        width:550px;
+    }
+    .phoneAppDescription{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+    }
+    .phoneAppDescription h3{
+        text-align: center;
+    }
+    .downloadImages{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .appleImage{
+        width:380px;
+    }
+    .appleImage img{
+        height:100%
+    }
+    .androidImage{
+        width:370px;
+    }
+    .subContent{
+        width:100%;
+        font-size: 12px;
+        padding: 50px 10px;
+    }
+    .footerDiv{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    div h3{
+        font-size: 35px;
+    }
+    div a{
+        font-size:25px
+    }
+    .footer2{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerLeftSection{
+        margin-left: 0px;
+        margin-bottom: 35px;
+    }
+    .companyName{
+        font-size: 35px;
+    }
+    .copyright{
+        font-size: 23px;
+        text-decoration: underline;
+    }
+    .fa-brands{
+        font-size:32px;
+        margin:0px 15px;
+    }
+    .fa-square-facebook{
+        margin-left: 0px;
+    }
 }
